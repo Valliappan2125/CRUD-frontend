@@ -33,7 +33,7 @@ const UpdateProducts = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:8080/products/${id}`, data)
+      .put(`https://crud-backend-wheat.vercel.app/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Product Updated Successfully",{variant: 'success'});
