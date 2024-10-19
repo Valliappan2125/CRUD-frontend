@@ -28,13 +28,13 @@ const ProductsTable = ({products}) => {
                 <td className="border border-slate-700 rounded-md text-center">
                   {index + 1}
                 </td>
-                <td className="border border-slate-700 rounded-md text-center">
+                <td className="border border-slate-700 rounded-md text-center uppercase">
                   {product.name}
                 </td>
                 <td className="border border-slate-700 rounded-md text-center max-md:hidden">
                   {product.price}
                 </td>
-                <td className="border border-slate-700 rounded-md text-center max-md:hidden">
+                <td className="border border-slate-700 rounded-md text-center max-md:hidden uppercase">
                   {product.category}
                 </td>
                 <td className="border border-slate-700 rounded-md text-center">

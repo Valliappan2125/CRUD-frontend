@@ -32,27 +32,27 @@ const ReadProducts = () => {
             ) : (
                 <div className="flex flex-col border-2 border-sky-400 rounded-xl w-fit p-4">
                     <div className="my-4">
-                        <span className="text-xl mr-4 text-gray-500">Id</span>
+                        <span className="text-xl mr-4 font-medium">Product ID : </span>
                         <span>{products._id}</span>
                     </div>
                     <div className="my-4">
-                        <span className="text-xl mr-4 text-gray-500">Product Name</span>
+                        <span className="text-xl mr-4 font-medium">Product Name : </span>
                         <span>{products.name}</span>
                     </div>
                     <div className="my-4">
-                        <span className="text-xl mr-4 text-gray-500">Price</span>
+                        <span className="text-xl mr-4 font-medium">Price : </span>
                         <span>{products.price}</span>
                     </div>
                     <div className="my-4">
-                        <span className="text-xl mr-4 text-gray-500">Category</span>
+                        <span className="text-xl mr-4 font-medium">Category : </span>
                         <span>{products.category}</span>
                     </div>
                     <div className="my-4">
-                        <span className="text-xl mr-4 text-gray-500">Created At</span>
+                        <span className="text-xl mr-4 font-medium">Created At : </span>
                         <span>{new Date(products.createdAt).toString()}</span>
                     </div>
                     <div className="my-4">
-                        <span className="text-xl mr-4 text-gray-500">Last Updated</span>
+                        <span className="text-xl mr-4 font-medium">Last Updated : </span>
                         <span>{new Date(products.updatedAt).toString()}</span>
                     </div>
                 </div>
