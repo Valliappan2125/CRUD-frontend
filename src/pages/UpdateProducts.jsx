@@ -15,7 +15,7 @@ const UpdateProducts = () => {
   const { id } = useParams();
   useEffect(() => {
     setLoading(true);
-    axios.get(`https://crud-backend-wheat.vercel.app/${id}`)
+    axios.get(`https://crud-backend-wheat.vercel.app/products/${id}`)
     .then((res) => {
         setName(res.data.name);
         setPrice(res.data.price);
@@ -33,7 +33,7 @@ const UpdateProducts = () => {
     };
     setLoading(true);
     axios
-      .put(`https://crud-backend-wheat.vercel.app/${id}`, data)
+      .put(`https://crud-backend-wheat.vercel.app/products/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Product Updated Successfully",{variant: 'success'});

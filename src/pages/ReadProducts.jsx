@@ -12,9 +12,10 @@ const ReadProducts = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://crud-backend-wheat.vercel.app/${id}`)
+      .get(`https://crud-backend-wheat.vercel.app/products/${id}`)
       .then((res) => {
         setProducts(res.data);
+        console.log(res.data);
         setLoading(false);
       })
       .catch((err) => {

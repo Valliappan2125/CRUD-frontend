@@ -12,7 +12,7 @@ const DeleteProducts = () => {
     const { enqueueSnackbar } = useSnackbar();
     const handleDeleteProduct = () => {
         setLoading(true);
-        axios.delete(`https://crud-backend-wheat.vercel.app/${id}`)
+        axios.delete(`https://crud-backend-wheat.vercel.app/products/${id}`)
         .then(() => {
             setLoading(false)
             enqueueSnackbar("Product Deleted Successfully",{variant: 'success'});

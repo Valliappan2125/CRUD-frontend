@@ -20,7 +20,7 @@ const CreateProducts = () => {
     };
     setLoading(true);
     axios
-      .post("https://crud-backend-wheat.vercel.app", data)
+      .post("https://crud-backend-wheat.vercel.app/products", data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Product Created Successfully", {variant: 'success'})

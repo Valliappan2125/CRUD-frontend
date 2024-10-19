@@ -13,9 +13,10 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://crud-backend-wheat.vercel.app")
+      .get("https://crud-backend-wheat.vercel.app/products")
       .then((res) => {
         setProducts(res.data);
+        console.log(res.data);
         setLoading(false);
       })
       .catch((err) => {
